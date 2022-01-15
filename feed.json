@@ -7,6 +7,14 @@
     "home_page_url": "http://yoursite.com",
     "items": [
         {
+            "id": "http://yoursite.com/a-blog/",
+            "url": "http://yoursite.com/a-blog/",
+            "title": "a blog",
+            "date_published": "2022-01-15T15:18:09.000Z",
+            "content_html": "",
+            "tags": []
+        },
+        {
             "id": "http://yoursite.com/My-New-Post/",
             "url": "http://yoursite.com/My-New-Post/",
             "title": "My New Post",

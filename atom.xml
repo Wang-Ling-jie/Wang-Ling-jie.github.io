@@ -8,9 +8,16 @@
     <author>
       <name>John Doe</name>
     </author>
-    <updated>2022-01-15T11:46:37.000Z</updated>
+    <updated>2022-01-15T15:18:09.000Z</updated>
     <category term="关键词1" />
     <category term="关键词2" />
+    <entry>
+        <id>http://yoursite.com/a-blog/</id>
+        <title>a blog</title>
+        <link rel="alternate" href="http://yoursite.com/a-blog/"/>
+        <content type="html"></content>
+        <updated>2022-01-15T15:18:09.000Z</updated>
+    </entry>
     <entry>
         <id>http://yoursite.com/My-New-Post/</id>
         <title>My New Post</title>

@@ -10,10 +10,17 @@
         </author>
         <description>描述123</description>
         <language>zh-CN</language>
-        <pubDate>Sat, 15 Jan 2022 19:46:37 +0800</pubDate>
-        <lastBuildDate>Sat, 15 Jan 2022 19:46:37 +0800</lastBuildDate>
+        <pubDate>Sat, 15 Jan 2022 23:18:09 +0800</pubDate>
+        <lastBuildDate>Sat, 15 Jan 2022 23:18:09 +0800</lastBuildDate>
         <category term="关键词1" />
         <category term="关键词2" />
+        <item>
+            <guid isPermalink="true">http://yoursite.com/a-blog/</guid>
+            <title>a blog</title>
+            <link>http://yoursite.com/a-blog/</link>
+            <pubDate>Sat, 15 Jan 2022 23:18:09 +0800</pubDate>
+            <description><![CDATA[  ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">http://yoursite.com/My-New-Post/</guid>
             <title>My New Post</title>
