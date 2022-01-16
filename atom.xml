@@ -1,230 +1,30 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://yoursite.com</id>
-    <title>Hexo</title>
-    <subtitle>subtitle</subtitle>
-    <icon>http://yoursite.com/images/favicon.ico</icon>
-    <link href="http://yoursite.com" />
+    <id><%= config.url %></id>
+    <title><%= config.title %></title>
+    <subtitle><%= config.subtitle %></subtitle>
+    <icon><%= full_url_for('/images/favicon.ico') %></icon>
+    <link href="<%= config.url %>" />
     <author>
-      <name>John</name>
+      <name><%= config.author %></name>
     </author>
-    <updated>2022-01-15T11:46:37.000Z</updated>
-    <category term="关键词1" />
-    <category term="关键词2" />
+    <updated><%= moment(lastBuildDate).toISOString() %></updated>
+    <%_ for (item of (config.keywords ? config.keywords.split(',') : [])) { _%>
+    <category term="<%= item %>" />
+    <%_ } _%>
+    <%_ for (const post of posts) { _%>
     <entry>
-        <id>http://yoursite.com/My-New-Post/</id>
-        <title>My New Post</title>
-        <link rel="alternate" href="http://yoursite.com/My-New-Post/"/>
-        <content type="html">&lt;h3 id=&#34;本文由知乎拷贝而来，仅供个人学习和测试，如有侵权可删除。&#34;&gt;&lt;a href=&#34;#本文由知乎拷贝而来，仅供个人学习和测试，如有侵权可删除。&#34; class=&#34;headerlink&#34; title=&#34;本文由知乎拷贝而来，仅供个人学习和测试，如有侵权可删除。&#34;&gt;&lt;/a&gt;本文由知乎拷贝而来，仅供个人学习和测试，如有侵权可删除。&lt;/h3&gt;&lt;p&gt;原文链接：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC82MDU3ODQ2NA==&#34;&gt;使用 Hexo+GitHub 搭建个人免费博客教程（小白向） - 知乎 (zhihu.com)&lt;/span&gt;&lt;/p&gt;
-&lt;h2 id=&#34;前言&#34;&gt;&lt;a href=&#34;#前言&#34; class=&#34;headerlink&#34; title=&#34;前言&#34;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;近些年来很多用户都喜欢使用 GitHub Pages 来搭建 Hexo 静态博客网站，其最吸引人的莫过于完全免费使用，并且非常稳定。&lt;/p&gt;
-&lt;p&gt;虽然搭建时比较麻烦，有点折腾，但是配置完成后，基本不需要操心维护的事，甚至放了几年都忘记了，打开来看文章依然还在。&lt;/p&gt;
-&lt;p&gt;本文就详细介绍下如何使用 Hexo + GitHub 搭建免费个人博客网站的教程。&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;为了照顾小白用户（第一次使用 GitHub 和 Hexo），尽可能详细，包括常见的坑和问题都有提示说明。下面目录中&lt;strong&gt;第 3~5 步为最重要的步骤&lt;/strong&gt;，其他内容如果已经会的可以选择性跳过。&lt;/p&gt;
-&lt;p&gt;看起来有点繁杂，捋顺了倒也简单，认真跟教程走，完整操作一遍大概需要 30 分钟。&lt;/p&gt;
-&lt;p&gt;o(￣▽￣)ｄ&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;内容目录：&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;简介：GitHub Pages 和 Hexo &amp;amp; 原理&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol&gt;
-&lt;li&gt;准备：环境搭建&lt;br&gt;1.1. 注意事项&lt;br&gt;1.2. 环境搭建&lt;/li&gt;
-&lt;li&gt;连接 Github&lt;/li&gt;
-&lt;li&gt;创建 Github Pages 仓库&lt;/li&gt;
-&lt;li&gt;本地安装 Hexo 博客程序&lt;br&gt;4.1. 安装 Hexo&lt;br&gt;4.2. Hexo 初始化和本地预览&lt;/li&gt;
-&lt;li&gt;部署 Hexo 到 GitHub Pages&lt;/li&gt;
-&lt;li&gt;绑定域名（可选）&lt;/li&gt;
-&lt;li&gt;开始使用&lt;br&gt;7.1. 发布文章&lt;br&gt;7.2. 网站设置&lt;br&gt;7.3. 更换主题&lt;br&gt;7.4. 常用代码&lt;/li&gt;
-&lt;li&gt;常见问题&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;简介&#34;&gt;&lt;a href=&#34;#简介&#34; class=&#34;headerlink&#34; title=&#34;简介&#34;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;h3 id=&#34;GitHub-Pages-是什么？&#34;&gt;&lt;a href=&#34;#GitHub-Pages-是什么？&#34; class=&#34;headerlink&#34; title=&#34;# GitHub Pages 是什么？&#34;&gt;&lt;/a&gt;&lt;strong&gt;# GitHub Pages 是什么？&lt;/strong&gt;&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZWxwLmdpdGh1Yi5jb20vZW4vYXJ0aWNsZXMvd2hhdC1pcy1naXRodWItcGFnZXM=&#34;&gt;What is GitHub Pages? - GitHub Help&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;GitHub Pages 是由 GitHub 官方提供的一种免费的静态站点托管服务，让我们可以在 GitHub 仓库里托管和发布自己的静态网站页面。&lt;/p&gt;
-&lt;h3 id=&#34;Hexo-是什么？&#34;&gt;&lt;a href=&#34;#Hexo-是什么？&#34; class=&#34;headerlink&#34; title=&#34;# Hexo 是什么？&#34;&gt;&lt;/a&gt;&lt;strong&gt;# Hexo 是什么？&lt;/strong&gt;&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;官网：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL3poLWNuLw==&#34;&gt;hexo.io&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Hexo 是一个快速、简洁且高效的静态博客框架，它基于 Node.js 运行，可以将我们撰写的 Markdown 文档解析渲染成静态的 HTML 网页。&lt;/p&gt;
-&lt;h3 id=&#34;Hexo-GitHub-文章发布原理&#34;&gt;&lt;a href=&#34;#Hexo-GitHub-文章发布原理&#34; class=&#34;headerlink&#34; title=&#34;# Hexo + GitHub 文章发布原理&#34;&gt;&lt;/a&gt;&lt;strong&gt;# Hexo + GitHub 文章发布原理&lt;/strong&gt;&lt;/h3&gt;&lt;p&gt;在本地撰写 Markdown 格式文章后，通过 Hexo 解析文档，渲染生成具有主题样式的 HTML 静态网页，再推送到 GitHub 上完成博文的发布。&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://pic3.zhimg.com/v2-a193a47cf70fe6ecf156e5f3d34920ea_r.jpg&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
-&lt;h3 id=&#34;优点和不足&#34;&gt;&lt;a href=&#34;#优点和不足&#34; class=&#34;headerlink&#34; title=&#34;# 优点和不足&#34;&gt;&lt;/a&gt;&lt;strong&gt;# 优点和不足&lt;/strong&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;优点：&lt;/strong&gt;完全免费；静态站点，轻量快速；可按需求自由定制改造；托管在 GitHub，安全省心；迁移方便……&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;不足：&lt;/strong&gt;发文不便，依赖于本地环境；更适合个人博客使用；GitHub 在国内访问速度有点不快。&lt;/p&gt;
-&lt;h2 id=&#34;1-准备&#34;&gt;&lt;a href=&#34;#1-准备&#34; class=&#34;headerlink&#34; title=&#34;1. 准备&#34;&gt;&lt;/a&gt;1. 准备&lt;/h2&gt;&lt;h3 id=&#34;注意事项&#34;&gt;&lt;a href=&#34;#注意事项&#34; class=&#34;headerlink&#34; title=&#34;# 注意事项&#34;&gt;&lt;/a&gt;&lt;strong&gt;# 注意事项&lt;/strong&gt;&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;输入代码时，核对准确，最好切换成英文输入法；&lt;/li&gt;
-&lt;li&gt;将文中的 “用户名” 和 “邮箱” 替换为自己的 GitHub 账户名和绑定的邮箱；&lt;/li&gt;
-&lt;li&gt;统一使用 Git Bash 进行操作（支持 Win、Mac）；&lt;/li&gt;
-&lt;li&gt;小白请严格按步骤进行，不要跳！&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;环境搭建&#34;&gt;&lt;a href=&#34;#环境搭建&#34; class=&#34;headerlink&#34; title=&#34;# 环境搭建&#34;&gt;&lt;/a&gt;&lt;strong&gt;# 环境搭建&lt;/strong&gt;&lt;/h3&gt;&lt;p&gt;Hexo 基于 Node.js，搭建过程中还需要使用 npm（Node.js 已带） 和 git，因此先搭建本地操作环境，安装 Node.js 和 Git。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Node.js：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ub2RlanMub3JnL3poLWNu&#34;&gt;https://nodejs.org/zh-cn&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;Git：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXQtc2NtLmNvbS9kb3dubG9hZHM=&#34;&gt;https://git-scm.com/downloads&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;下载 Node.js 和 Git 程序并安装，一路点 “下一步” 按默认配置完成安装。&lt;/p&gt;
-&lt;p&gt;安装完成后，Win+R 输入 cmd 并打开，依次输入 &lt;code&gt;node -v&lt;/code&gt;、&lt;code&gt;npm -v&lt;/code&gt; 和 &lt;code&gt;git --version&lt;/code&gt; 并回车，如下图出现程序版本号即可。&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://pic1.zhimg.com/80/v2-27b47b5ae479ce7987851292a67774b0_1440w.jpg&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;2-连接-Github&#34;&gt;&lt;a href=&#34;#2-连接-Github&#34; class=&#34;headerlink&#34; title=&#34;2. 连接 Github&#34;&gt;&lt;/a&gt;2. 连接 Github&lt;/h2&gt;&lt;p&gt;使用邮箱注册 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tLw==&#34;&gt;GitHub&lt;/span&gt; 账户，选择免费账户（Free），并完成邮件验证。&lt;/p&gt;
-&lt;p&gt;右键 -&amp;gt; Git Bash Here，&lt;strong&gt;设置用户名和邮箱&lt;/strong&gt;：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;text&#34;&gt;git config --global user.name &amp;quot;GitHub 用户名&amp;quot;
-git config --global user.email &amp;quot;GitHub 邮箱&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;创建 SSH 密匙&lt;/strong&gt;：&lt;/p&gt;
-&lt;p&gt;输入 &lt;code&gt;ssh-keygen -t rsa -C &amp;quot;GitHub 邮箱&amp;quot;&lt;/code&gt;，然后一路回车。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;添加密匙：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;进入 [C:\Users\用户名.ssh] 目录（要勾选显示“隐藏的项目”），用记事本打开公钥 id_rsa.pub 文件并复制里面的内容。&lt;/p&gt;
-&lt;p&gt;登陆 GitHub ，进入 Settings 页面，选择左边栏的 SSH and GPG keys，点击 New SSH key。&lt;/p&gt;
-&lt;p&gt;Title 随便取个名字，粘贴复制的 id_rsa.pub 内容到 Key 中，点击 Add SSH key 完成添加。&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://pic1.zhimg.com/v2-9125065afd24332d7cd84feb6a350730_r.jpg&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;验证连接：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;打开 Git Bash，输入 &lt;code&gt;ssh -T git@github.com&lt;/code&gt; 出现 “Are you sure……”，输入 yes 回车确认。&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://pic3.zhimg.com/v2-b4c7524a2451f4ab42f9c22ea3c7b6be_r.jpg&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
-&lt;p&gt;显示 “Hi xxx! You’ve successfully……” 即连接成功。&lt;/p&gt;
-&lt;h2 id=&#34;3-创建-Github-Pages-仓库&#34;&gt;&lt;a href=&#34;#3-创建-Github-Pages-仓库&#34; class=&#34;headerlink&#34; title=&#34;3. 创建 Github Pages 仓库&#34;&gt;&lt;/a&gt;3. 创建 Github Pages 仓库&lt;/h2&gt;&lt;p&gt;GitHub 主页右上角加号 -&amp;gt; New repository：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Repository name 中输入 &lt;code&gt;用户名.github.io&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;勾选 “Initialize this repository with a README”&lt;/li&gt;
-&lt;li&gt;Description 选填&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;填好后点击 Create repository 创建。&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://pic2.zhimg.com/v2-67a8165154f4c5f4a6333e76e78ed815_r.jpg&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
-&lt;p&gt;创建后默认自动启用 HTTPS，博客地址为：&lt;code&gt;https://用户名.github.io&lt;/code&gt;&lt;/p&gt;
-&lt;h2 id=&#34;4-本地安装-Hexo-博客程序&#34;&gt;&lt;a href=&#34;#4-本地安装-Hexo-博客程序&#34; class=&#34;headerlink&#34; title=&#34;4. 本地安装 Hexo 博客程序&#34;&gt;&lt;/a&gt;4. 本地安装 Hexo 博客程序&lt;/h2&gt;&lt;p&gt;新建一个文件夹用来存放 Hexo 的程序文件，如 Hexo-Blog。打开该文件夹，右键 -&amp;gt; Git Bash Here。&lt;/p&gt;
-&lt;h3 id=&#34;4-1-安装-Hexo&#34;&gt;&lt;a href=&#34;#4-1-安装-Hexo&#34; class=&#34;headerlink&#34; title=&#34;# 4.1 安装 Hexo&#34;&gt;&lt;/a&gt;&lt;strong&gt;# 4.1 安装 Hexo&lt;/strong&gt;&lt;/h3&gt;&lt;p&gt;使用 npm 一键安装 Hexo 博客程序：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;text&#34;&gt;npm install -g hexo-cli
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Mac 用户需要管理员权限（sudo），运行这条命令：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;text&#34;&gt;sudo npm install -g hexo-cli
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;安装时间有点久（真的很慢！），界面也没任何反应，&lt;strong&gt;耐心等待&lt;/strong&gt;，安装完成后如下图。&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://pic2.zhimg.com/v2-01e7fc8bb9280437deb437bf73a190a1_r.jpg&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
-&lt;h3 id=&#34;4-2-Hexo-初始化和本地预览&#34;&gt;&lt;a href=&#34;#4-2-Hexo-初始化和本地预览&#34; class=&#34;headerlink&#34; title=&#34;# 4.2 Hexo 初始化和本地预览&#34;&gt;&lt;/a&gt;&lt;strong&gt;# 4.2 Hexo 初始化和本地预览&lt;/strong&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;初始化并安装所需组件：&lt;/strong&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;text&#34;&gt;hexo init      # 初始化
-npm install    # 安装组件
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;完成后依次输入下面命令，&lt;strong&gt;启动本地服务器进行预览&lt;/strong&gt;：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;text&#34;&gt;hexo g   # 生成页面
-hexo s   # 启动预览
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;访问&lt;/strong&gt; &lt;code&gt;http://localhost:4000&lt;/code&gt;&lt;strong&gt;，出现 Hexo 默认页面，本地博客安装成功！&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://pic4.zhimg.com/v2-1c3baeecf1ef3bec5c8ef3f14639f68b_r.jpg&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tips：&lt;/strong&gt;如果出现页面加载不出来，可能是端口被占用了。Ctrl+C 关闭服务器，运行 &lt;code&gt;hexo server -p 5000&lt;/code&gt; 更改端口号后重试。&lt;/p&gt;
-&lt;p&gt;Hexo 博客文件夹目录结构如下：&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://pic1.zhimg.com/v2-264c75c0e493ae8cc5f283567c64ff2c_r.jpg&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;5-部署-Hexo-到-GitHub-Pages&#34;&gt;&lt;a href=&#34;#5-部署-Hexo-到-GitHub-Pages&#34; class=&#34;headerlink&#34; title=&#34;5. 部署 Hexo 到 GitHub Pages&#34;&gt;&lt;/a&gt;5. 部署 Hexo 到 GitHub Pages&lt;/h2&gt;&lt;p&gt;本地博客测试成功后，就是上传到 GitHub 进行部署，使其能够在网络上访问。&lt;/p&gt;
-&lt;p&gt;首先&lt;strong&gt;安装 hexo-deployer-git&lt;/strong&gt;：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;text&#34;&gt;npm install hexo-deployer-git --save
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;然后&lt;strong&gt;修改 _config.yml&lt;/strong&gt; 文件末尾的 Deployment 部分，修改成如下：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;text&#34;&gt;deploy:
-  type: git
-  repository: git@github.com:用户名/用户名.github.io.git
-  branch: master
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;完成后运行 &lt;code&gt;hexo d&lt;/code&gt; 将网站上传部署到 GitHub Pages。&lt;/p&gt;
-&lt;p&gt;完成！这时访问我们的 GitHub 域名 &lt;code&gt;https://用户名.github.io&lt;/code&gt; 就可以看到 Hexo 网站了。&lt;/p&gt;
-&lt;h2 id=&#34;6-绑定域名（可选）&#34;&gt;&lt;a href=&#34;#6-绑定域名（可选）&#34; class=&#34;headerlink&#34; title=&#34;6. 绑定域名（可选）&#34;&gt;&lt;/a&gt;6. 绑定域名（可选）&lt;/h2&gt;&lt;p&gt;博客搭建完成使用的是 GitHub 的子域名（用户名.&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2dpdGh1Yi5pby8=&#34;&gt;http://github.io&lt;/span&gt;），我们可以为 Hexo 博客绑定自己的域名替换 GitHub 域名，更加个性化和专业，也利于 SEO。&lt;/p&gt;
-&lt;p&gt;我们使用 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cubmFtZXNpbG8uY29tLz9yaWQ9ZDI3ZmEzMmRv&#34;&gt;Namesilo&lt;/span&gt; 进行注册，便宜好用没啥套路，使用优惠码 &lt;code&gt;okoff&lt;/code&gt; 优惠一美元，com 域名大概 50 块一年。&lt;/p&gt;
-&lt;h3 id=&#34;6-1-域名注册和解析&#34;&gt;&lt;a href=&#34;#6-1-域名注册和解析&#34; class=&#34;headerlink&#34; title=&#34;# 6.1 域名注册和解析&#34;&gt;&lt;/a&gt;&lt;strong&gt;# 6.1 域名注册和解析&lt;/strong&gt;&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;域名注册和解析教程：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC8zMzkyMTQzNg==&#34;&gt;Namesilo 域名购买及使用教程&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;按上面教程注册并解析域名，在 DNS 设置部分，删除自带的记录，然后添加 CNAME 记录将 www 域名解析指向 &lt;code&gt;用户名.github.io&lt;/code&gt;。&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://pic3.zhimg.com/v2-d5d37c8ad523d8ab5c7c200fabc9585e_r.jpg&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
-&lt;h3 id=&#34;6-2-绑定域名到-Hexo-博客&#34;&gt;&lt;a href=&#34;#6-2-绑定域名到-Hexo-博客&#34; class=&#34;headerlink&#34; title=&#34;# 6.2 绑定域名到 Hexo 博客&#34;&gt;&lt;/a&gt;&lt;strong&gt;# 6.2 绑定域名到 Hexo 博客&lt;/strong&gt;&lt;/h3&gt;&lt;p&gt;进入本地博客文件夹的 source 目录，打开记事本，里面输入自己的域名，如 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy5leGFtcGxlLmNvbSzkv53lrZjlkI3np7DkuLov&#34;&gt;http://www.example.com，保存名称为&lt;/span&gt; “CNAME”，格式为 “所有文件”（无 .txt 后缀）。&lt;/p&gt;
-&lt;p&gt;清除缓存等文件并重新发布网站：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;text&#34;&gt;hexo clean   # 清除缓存文件等
-hexo g       # 生成页面
-hexo s       # 启动预览
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;现在就可以使用自己的域名访问 Hexo 博客了。&lt;/p&gt;
-&lt;h3 id=&#34;6-3-开启-HTTPS&#34;&gt;&lt;a href=&#34;#6-3-开启-HTTPS&#34; class=&#34;headerlink&#34; title=&#34;# 6.3 开启 HTTPS&#34;&gt;&lt;/a&gt;&lt;strong&gt;# 6.3 开启 HTTPS&lt;/strong&gt;&lt;/h3&gt;&lt;p&gt;配置自己的域名后，需要我们手动开启 HTTPS。打开博客所在 GitHub 仓库，Settings -&amp;gt; 下拉找到 GitHub Pages -&amp;gt; 勾选 Enforce HTTPS。&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://pic4.zhimg.com/v2-54f8744afc9746884e6b3acecfc5f8cf_r.jpg&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
-&lt;p&gt;HTTPS 证书部署成功需要一定时间，等大概几分钟再访问域名，就可以看到域名前面的小绿锁了，HTTPS 配置完成！&lt;/p&gt;
-&lt;h2 id=&#34;7-开始使用&#34;&gt;&lt;a href=&#34;#7-开始使用&#34; class=&#34;headerlink&#34; title=&#34;7. 开始使用&#34;&gt;&lt;/a&gt;7. 开始使用&lt;/h2&gt;&lt;h3 id=&#34;7-1-发布文章&#34;&gt;&lt;a href=&#34;#7-1-发布文章&#34; class=&#34;headerlink&#34; title=&#34;# 7.1 发布文章&#34;&gt;&lt;/a&gt;&lt;strong&gt;# 7.1 发布文章&lt;/strong&gt;&lt;/h3&gt;&lt;p&gt;进入博客所在目录，右键打开 Git Bash Here，创建博文：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;text&#34;&gt;hexo new &amp;quot;My New Post&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;然后 source 文件夹中会出现一个 My New Post.md 文件，就可以使用 Markdown 编辑器在该文件中撰写文章了。&lt;/p&gt;
-&lt;p&gt;写完后运行下面代码将文章渲染并部署到 GitHub Pages 上完成发布。&lt;strong&gt;以后每次发布文章都是这两条命令。&lt;/strong&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;text&#34;&gt;hexo g   # 生成页面
-hexo d   # 部署发布
-&lt;/code&gt;&lt;/pre&gt;
-&lt;hr&gt;
-&lt;p&gt;也可以不使用命令自己创建 .md 文件，只需在文件开头手动加入如下格式 Front-matter 即可，写完后运行 &lt;code&gt;hexo g&lt;/code&gt; 和 &lt;code&gt;hexo d&lt;/code&gt; 发布。&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;text&#34;&gt;---
-title: Hello World # 标题
-date: 2019/3/26 hh:mm:ss # 时间
-categories: # 分类
-- Diary
-tags: # 标签
-- PS3
-- Games
----
-
-摘要
-&amp;lt;!--more--&amp;gt;
-正文
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;7-2-网站设置&#34;&gt;&lt;a href=&#34;#7-2-网站设置&#34; class=&#34;headerlink&#34; title=&#34;# 7.2 网站设置&#34;&gt;&lt;/a&gt;&lt;strong&gt;# 7.2 网站设置&lt;/strong&gt;&lt;/h3&gt;&lt;p&gt;包括网站名称、描述、作者、链接样式等，全部在网站目录下的 _config.yml 文件中，参考&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL3poLWNuL2RvY3MvY29uZmlndXJhdGlvbg==&#34;&gt;官方文档&lt;/span&gt;按需要编辑。&lt;/p&gt;
-&lt;p&gt;注意：冒号后要加一个空格！&lt;/p&gt;
-&lt;h3 id=&#34;7-3-更换主题&#34;&gt;&lt;a href=&#34;#7-3-更换主题&#34; class=&#34;headerlink&#34; title=&#34;# 7.3 更换主题&#34;&gt;&lt;/a&gt;&lt;strong&gt;# 7.3 更换主题&lt;/strong&gt;&lt;/h3&gt;&lt;p&gt;在 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL3RoZW1lcy8=&#34;&gt;Themes | Hexo&lt;/span&gt; 选择一个喜欢的主题，比如 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3RoZW1lLW5leHQuaWlzc25hbi5jb20vZ2V0dGluZy1zdGFydGVkLmh0bWw=&#34;&gt;NexT&lt;/span&gt;，进入网站目录打开 Git Bash Here 下载主题：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;text&#34;&gt;git clone https://github.com/iissnan/hexo-theme-next themes/next
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;然后修改 _config.yml 中的 theme 为新主题名称 next，发布。（有的主题需要将 _config.yml 替换为主题自带的，参考主题说明。）&lt;/p&gt;
-&lt;h3 id=&#34;7-4-常用命令&#34;&gt;&lt;a href=&#34;#7-4-常用命令&#34; class=&#34;headerlink&#34; title=&#34;# 7.4 常用命令&#34;&gt;&lt;/a&gt;&lt;strong&gt;# 7.4 常用命令&lt;/strong&gt;&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;text&#34;&gt;hexo new &amp;quot;name&amp;quot;       # 新建文章
-hexo new page &amp;quot;name&amp;quot;  # 新建页面
-hexo g                # 生成页面
-hexo d                # 部署
-hexo g -d             # 生成页面并部署
-hexo s                # 本地预览
-hexo clean            # 清除缓存和已生成的静态文件
-hexo help             # 帮助
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;8-常见问题&#34;&gt;&lt;a href=&#34;#8-常见问题&#34; class=&#34;headerlink&#34; title=&#34;8 常见问题&#34;&gt;&lt;/a&gt;8 常见问题&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;1、Hexo 设置显示文章摘要，首页不显示全文&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Hexo 主页文章列表默认会显示文章全文，浏览时很不方便，可以在文章中插入 &lt;code&gt;&amp;lt;!--more--&amp;gt;&lt;/code&gt; 进行分段。&lt;/p&gt;
-&lt;p&gt;该代码前面的内容会作为摘要显示，而后面的内容会替换为 “Read More” 隐藏起来。&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://pic4.zhimg.com/v2-45701cf120ca77e6733ad30b40666f33_r.jpg&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;2、设置网站图标&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;进入 themes/主题 文件夹，打开 _config.yml 配置文件，找到 favicon 修改，一般格式为：&lt;code&gt;favicon: 图标地址&lt;/code&gt;。（不同主题可能略有差别）&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;3、修改并部署后没有效果&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;使用 &lt;code&gt;hexo clean&lt;/code&gt; 清理后重新部署。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;4、开启 HTTPS 后访问网站显示连接不安全？&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;证书还未部署生效，等待一会儿，清除浏览器缓存再试。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;5、Mac 安装 Hexo 报错无法安装&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Mac 用户需要管理员权限运行，使用 &lt;code&gt;sudo npm install -g hexo-cli&lt;/code&gt; 命令安装。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;6、npm 下载速度慢，甚至完全没反应&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;使用 npm 安装程序等待很久也没反应，或者下载速度很慢，可以更换 npm 源为国内 npm 镜像。&lt;/p&gt;
-&lt;p&gt;临时更换方法：在 npm 安装命令后面加上：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;text&#34;&gt;--registry https://registry.npm.taobao.org 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;结语&#34;&gt;&lt;a href=&#34;#结语&#34; class=&#34;headerlink&#34; title=&#34;结语&#34;&gt;&lt;/a&gt;结语&lt;/h2&gt;&lt;p&gt;Hexo 是一种纯静态的博客，我们必须要在本地完成文章的编辑再部署到 GitHub 上，依赖于本地环境。不能像 WordPress 或 Typecho 那样的动态博客一样能直接在浏览器中完成撰文和发布。&lt;/p&gt;
-&lt;p&gt;可以说是一种比较极客的写博客方式，但是优势也是明显的——免费稳定省心，比较适合爱折腾研究的用户，或者没有在线发文需求的朋友。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;觉得有帮助的朋友，不妨点个赞再走呗 ╰(￣▽￣)╭ ~&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;建站教程：&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC8zNzg5NjQ3MQ==&#34;&gt;WordPress搭建教程：手把手教你搭建WordPress博客&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC80NjEzMTA0Mw==&#34;&gt;最简单的建站教程：使用虚拟主机搭建WordPress个人网站&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC8zNDIxMTcwOQ==&#34;&gt;30分钟搭建 Typecho 个人博客教程&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-        <updated>2022-01-15T11:46:37.000Z</updated>
+        <id><%= post.permalink %></id>
+        <title><%= post.title %></title>
+        <link rel="alternate" href="<%= post.permalink %>"/>
+        <content type="html"><%= post.content %></content>
+        <%_ for (const { name, path } of (post.categories ? post.categories.toArray() : [])) { _%>
+        <category term="<%= name %>" scheme="<%= full_url_for(path) %>" />
+        <%_ } _%>
+        <%_ for (const { name, path } of (post.tags ? post.tags.toArray() : [])) { _%>
+        <category term="<%= name %>" scheme="<%= full_url_for(path) %>" />
+        <%_ } _%>
+        <updated><%= moment(post.date).toISOString() %></updated>
     </entry>
-    <entry>
-        <id>http://yoursite.com/hello-world/</id>
-        <title>Hello World</title>
-        <link rel="alternate" href="http://yoursite.com/hello-world/"/>
-        <content type="html">&lt;p&gt;Welcome to &lt;a href=&#34;https://hexo.io/&#34;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&#34;https://hexo.io/docs/&#34;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&#34;https://hexo.io/docs/troubleshooting.html&#34;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/hexojs/hexo/issues&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;Quick-Start&#34;&gt;&lt;a href=&#34;#Quick-Start&#34; class=&#34;headerlink&#34; title=&#34;Quick Start&#34;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&#34;Create-a-new-post&#34;&gt;&lt;a href=&#34;#Create-a-new-post&#34; class=&#34;headerlink&#34; title=&#34;Create a new post&#34;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo new &lt;span class=&#34;string&#34;&gt;&amp;quot;My New Post&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/writing.html&#34;&gt;Writing&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;Run-server&#34;&gt;&lt;a href=&#34;#Run-server&#34; class=&#34;headerlink&#34; title=&#34;Run server&#34;&gt;&lt;/a&gt;Run server&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo server&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/server.html&#34;&gt;Server&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;Generate-static-files&#34;&gt;&lt;a href=&#34;#Generate-static-files&#34; class=&#34;headerlink&#34; title=&#34;Generate static files&#34;&gt;&lt;/a&gt;Generate static files&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo generate&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/generating.html&#34;&gt;Generating&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;Deploy-to-remote-sites&#34;&gt;&lt;a href=&#34;#Deploy-to-remote-sites&#34; class=&#34;headerlink&#34; title=&#34;Deploy to remote sites&#34;&gt;&lt;/a&gt;Deploy to remote sites&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/one-command-deployment.html&#34;&gt;Deployment&lt;/a&gt;&lt;/p&gt;
-</content>
-        <updated>2022-01-15T11:36:13.205Z</updated>
-    </entry>
+    <%_ } _%>
 </feed>
