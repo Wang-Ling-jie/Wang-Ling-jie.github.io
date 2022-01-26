@@ -1,22 +1,33 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://Wang-Ling-jie.github.io</id>
-    <title>Hexo</title>
-    <subtitle>subtitle</subtitle>
+    <title>Lingjieの小窝</title>
+    <subtitle>无丝竹之乱耳，无案牍之劳形</subtitle>
     <icon>http://wang-ling-jie.github.io/images/favicon.ico</icon>
     <link href="http://Wang-Ling-jie.github.io" />
     <author>
       <name>我好菜啊</name>
     </author>
-    <updated>2022-01-18T12:09:42.000Z</updated>
+    <updated>2022-01-26T14:34:08.000Z</updated>
     <category term="关键词1" />
     <category term="关键词2" />
+    <entry>
+        <id>http://wang-ling-jie.github.io/Everyday-Recordings/</id>
+        <title>Everyday Recordings</title>
+        <link rel="alternate" href="http://wang-ling-jie.github.io/Everyday-Recordings/"/>
+        <content type="html">&lt;h1 id=&#34;2022126&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2022126&#34;&gt;#&lt;/a&gt; 2022/1/26&lt;/h1&gt;
+&lt;p&gt;阅读 CSAPP 汇编部分，基本理解了汇编的大致结构和 MOV 类指令&lt;/p&gt;
+&lt;p&gt;每日单词 Day1&lt;/p&gt;
+</content>
+        <category term="记录" scheme="http://wang-ling-jie.github.io/categories/%E8%AE%B0%E5%BD%95/" />
+        <updated>2022-01-26T14:34:08.000Z</updated>
+    </entry>
     <entry>
         <id>http://wang-ling-jie.github.io/diary/</id>
         <title>diary</title>
         <link rel="alternate" href="http://wang-ling-jie.github.io/diary/"/>
         <content type="html"></content>
-        <category term="生活记录" scheme="http://wang-ling-jie.github.io/categories/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/" />
+        <category term="记录" scheme="http://wang-ling-jie.github.io/categories/%E8%AE%B0%E5%BD%95/" />
         <category term="life" scheme="http://wang-ling-jie.github.io/tags/life/" />
         <updated>2022-01-18T12:09:42.000Z</updated>
     </entry>
@@ -2028,22 +2039,5 @@ http.createServer((req, res) &amp;#x3D;&amp;gt; {
         <content type="html">&lt;p&gt;This is a link post without a title. The title should be the link with or without protocol. Clicking on the link should open &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy5nb29nbGUuY29tLw==&#34;&gt;Google&lt;/span&gt; in a new tab or window.&lt;/p&gt;
 </content>
         <updated>2013-12-24T15:44:13.000Z</updated>
-    </entry>
-    <entry>
-        <id>http://wang-ling-jie.github.io/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%86%E3%82%B9%E3%83%88/</id>
-        <title>日本語テスト</title>
-        <link rel="alternate" href="http://wang-ling-jie.github.io/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%86%E3%82%B9%E3%83%88/"/>
-        <content type="html">&lt;p&gt;This is a Japanese test post.&lt;/p&gt;
-&lt;p&gt;私は昨日ついにその助力家というのの上よりするたなけれ。&lt;/p&gt;
-&lt;p&gt;最も今をお話団はちょうどこの前後なかろでくらいに困りがいるたをは帰着考えたなかって、そうにもするでうたらない。&lt;/p&gt;
-&lt;p&gt;がたを知っないはずも同時に九月をいよいよたありた。&lt;/p&gt;
-&lt;p&gt;もっと槙さんにぼんやり金少し説明にえた自分大した人私か影響にというお関係たうませないが、この次第も私か兄具合に使うて、槙さんののに当人のあなたにさぞご意味と行くて私個人が小尊敬を聴いように同時に同反抗に集っだうて、いよいよまず相当へあっうからいだ事をしでなけれ。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;それでそれでもご時日をしはずはたったいやと突き抜けるますて、その元がは行ったてという獄を尽すていけですた。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;この中道具の日その学校はあなたごろがすまなりかとネルソンさんの考えるですん、辺の事実ないというご盲従ありたですと、爺さんのためが薬缶が結果までの箸の当時してならて、多少の十月にためからそういう上からとにかくしましないと触れべきものたで、ないうですと多少お人達したのでたた。&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;From &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2xpcHN1bS5zdWd1dHN1a2FlcnUuanAvaW5kZXguY2dp&#34;&gt;すぐ使えるダミーテキスト - 日本語 Lorem ipsum&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
-</content>
-        <updated>2013-12-24T15:33:26.000Z</updated>
     </entry>
 </feed>

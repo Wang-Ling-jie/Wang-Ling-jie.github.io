@@ -1,11 +1,21 @@
 {
     "version": "https://jsonfeed.org/version/1",
-    "title": "Hexo",
-    "subtitle": "subtitle",
+    "title": "Lingjieの小窝",
+    "subtitle": "无丝竹之乱耳，无案牍之劳形",
     "icon": "http://wang-ling-jie.github.io/images/favicon.ico",
     "description": "Always fail, always dream",
     "home_page_url": "http://Wang-Ling-jie.github.io",
     "items": [
+        {
+            "id": "http://wang-ling-jie.github.io/Everyday-Recordings/",
+            "url": "http://wang-ling-jie.github.io/Everyday-Recordings/",
+            "title": "Everyday Recordings",
+            "date_published": "2022-01-26T14:34:08.000Z",
+            "content_html": "<h1 id=\"2022126\"><a class=\"anchor\" href=\"#2022126\">#</a> 2022/1/26</h1>\n<p>阅读 CSAPP 汇编部分，基本理解了汇编的大致结构和 MOV 类指令</p>\n<p>每日单词 Day1</p>\n",
+            "tags": [
+                "记录"
+            ]
+        },
         {
             "id": "http://wang-ling-jie.github.io/diary/",
             "url": "http://wang-ling-jie.github.io/diary/",
@@ -13,7 +23,7 @@
             "date_published": "2022-01-18T12:09:42.000Z",
             "content_html": "",
             "tags": [
-                "生活记录",
+                "记录",
                 "life"
             ]
         },
@@ -200,14 +210,6 @@
             "title": "www.google.com",
             "date_published": "2013-12-24T15:44:13.000Z",
             "content_html": "<p>This is a link post without a title. The title should be the link with or without protocol. Clicking on the link should open <span class=\"exturl\" data-url=\"aHR0cDovL3d3dy5nb29nbGUuY29tLw==\">Google</span> in a new tab or window.</p>\n",
-            "tags": []
-        },
-        {
-            "id": "http://wang-ling-jie.github.io/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%86%E3%82%B9%E3%83%88/",
-            "url": "http://wang-ling-jie.github.io/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%86%E3%82%B9%E3%83%88/",
-            "title": "日本語テスト",
-            "date_published": "2013-12-24T15:33:26.000Z",
-            "content_html": "<p>This is a Japanese test post.</p>\n<p>私は昨日ついにその助力家というのの上よりするたなけれ。</p>\n<p>最も今をお話団はちょうどこの前後なかろでくらいに困りがいるたをは帰着考えたなかって、そうにもするでうたらない。</p>\n<p>がたを知っないはずも同時に九月をいよいよたありた。</p>\n<p>もっと槙さんにぼんやり金少し説明にえた自分大した人私か影響にというお関係たうませないが、この次第も私か兄具合に使うて、槙さんののに当人のあなたにさぞご意味と行くて私個人が小尊敬を聴いように同時に同反抗に集っだうて、いよいよまず相当へあっうからいだ事をしでなけれ。</p>\n<blockquote>\n<p>それでそれでもご時日をしはずはたったいやと突き抜けるますて、その元がは行ったてという獄を尽すていけですた。</p>\n</blockquote>\n<p>この中道具の日その学校はあなたごろがすまなりかとネルソンさんの考えるですん、辺の事実ないというご盲従ありたですと、爺さんのためが薬缶が結果までの箸の当時してならて、多少の十月にためからそういう上からとにかくしましないと触れべきものたで、ないうですと多少お人達したのでたた。</p>\n<p><em>From <span class=\"exturl\" data-url=\"aHR0cDovL2xpcHN1bS5zdWd1dHN1a2FlcnUuanAvaW5kZXguY2dp\">すぐ使えるダミーテキスト - 日本語 Lorem ipsum</span></em></p>\n",
             "tags": []
         }
     ]
