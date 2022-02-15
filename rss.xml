@@ -10,10 +10,21 @@
         </author>
         <description>Always fail, always dream</description>
         <language>zh-CN</language>
-        <pubDate>Wed, 26 Jan 2022 22:34:08 +0800</pubDate>
-        <lastBuildDate>Wed, 26 Jan 2022 22:34:08 +0800</lastBuildDate>
+        <pubDate>Tue, 15 Feb 2022 15:46:13 +0800</pubDate>
+        <lastBuildDate>Tue, 15 Feb 2022 15:46:13 +0800</lastBuildDate>
         <category term="关键词1" />
         <category term="关键词2" />
+        <item>
+            <guid isPermalink="true">http://wang-ling-jie.github.io/computer-science/OperatingSystem/lesson1/</guid>
+            <title>lesson1</title>
+            <link>http://wang-ling-jie.github.io/computer-science/OperatingSystem/lesson1/</link>
+            <category term="计算机科学" scheme="http://wang-ling-jie.github.io/categories/computer-science/" />
+            <category term="操作系统" scheme="http://wang-ling-jie.github.io/categories/computer-science/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" />
+            <category term="笔记" scheme="http://wang-ling-jie.github.io/tags/%E7%AC%94%E8%AE%B0/" />
+            <pubDate>Tue, 15 Feb 2022 15:46:13 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;什么是操作系统&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#什么是操作系统&#34;&gt;#&lt;/a&gt; 什么是操作系统&lt;/h1&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">http://wang-ling-jie.github.io/Everyday-Recordings/</guid>
             <title>Everyday Recordings</title>
@@ -2033,14 +2044,6 @@ http.createServer((req, res) &amp;#x3D;&amp;gt; {
 &lt;p&gt;&lt;blockquote class=&#34;pullquote right&#34;&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
 &lt;/blockquote&gt;&lt;/p&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ligula justo, lobortis sit amet semper vel, dignissim sit amet libero. Praesent ac tempus ligula. Maecenas at gravida odio. Etiam tristique volutpat lacus eu faucibus. Donec non tempus arcu. Phasellus adipiscing, mauris nec mollis egestas, ipsum nunc auctor velit, et rhoncus lorem ipsum at ante. Praesent et sem in velit volutpat auctor. Duis vel mauris nulla. Maecenas mattis interdum ante, quis sagittis nibh cursus et. Nulla facilisi. Morbi convallis gravida tortor, ut fermentum enim gravida et. Nunc vel dictum nisl, non ultrices libero. Proin vestibulum felis eget orci consectetur lobortis. Vestibulum augue nulla, iaculis vitae augue vehicula, dignissim ultrices libero. Sed imperdiet urna et quam ultrices tincidunt nec ac magna. Etiam vel pharetra elit.&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">http://wang-ling-jie.github.io/link-post-without-title/</guid>
-            <title>www.google.com</title>
-            <link>http://wang-ling-jie.github.io/link-post-without-title/</link>
-            <pubDate>Tue, 24 Dec 2013 23:44:13 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;This is a link post without a title. The title should be the link with or without protocol. Clicking on the link should open &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy5nb29nbGUuY29tLw==&#34;&gt;Google&lt;/span&gt; in a new tab or window.&lt;/p&gt;
  ]]></description>
         </item>
     </channel>
