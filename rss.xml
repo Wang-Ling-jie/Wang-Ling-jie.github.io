@@ -10,13 +10,20 @@
         </author>
         <description>Always fail, always dream</description>
         <language>zh-CN</language>
-        <pubDate>Tue, 15 Feb 2022 15:46:13 +0800</pubDate>
-        <lastBuildDate>Tue, 15 Feb 2022 15:46:13 +0800</lastBuildDate>
+        <pubDate>Mon, 21 Feb 2022 21:15:57 +0800</pubDate>
+        <lastBuildDate>Mon, 21 Feb 2022 21:15:57 +0800</lastBuildDate>
         <category term="关键词1" />
         <category term="关键词2" />
         <item>
+            <guid isPermalink="true">http://wang-ling-jie.github.io/computer-science/ComputerOrganization/Lesson1/</guid>
+            <title></title>
+            <link>http://wang-ling-jie.github.io/computer-science/ComputerOrganization/Lesson1/</link>
+            <pubDate>Mon, 21 Feb 2022 21:15:57 +0800</pubDate>
+            <description><![CDATA[  ]]></description>
+        </item>
+        <item>
             <guid isPermalink="true">http://wang-ling-jie.github.io/computer-science/OperatingSystem/lesson1/</guid>
-            <title>HIT lesson</title>
+            <title>HIT OS lesson</title>
             <link>http://wang-ling-jie.github.io/computer-science/OperatingSystem/lesson1/</link>
             <category term="计算机科学" scheme="http://wang-ling-jie.github.io/categories/computer-science/" />
             <category term="操作系统" scheme="http://wang-ling-jie.github.io/categories/computer-science/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" />
@@ -2029,22 +2036,6 @@ alt=&amp;quot;IMAGE ALT TEXT HERE&amp;quot; width=&amp;quot;240&amp;quot; height
 &lt;p&gt;&lt;div class=&#34;video-container&#34;&gt;&lt;iframe src=&#34;https://www.youtube.com/embed/TIbZDRXM-Tg&#34; frameborder=&#34;0&#34; loading=&#34;lazy&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Vimeo&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;div class=&#34;video-container&#34;&gt;&lt;iframe src=&#34;https://player.vimeo.com/video/82090131&#34; frameborder=&#34;0&#34; loading=&#34;lazy&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">http://wang-ling-jie.github.io/gallery-post/</guid>
-            <title>Gallery Post</title>
-            <link>http://wang-ling-jie.github.io/gallery-post/</link>
-            <pubDate>Wed, 25 Dec 2013 00:16:18 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;This post contains 4 photos:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Widescreen wallpaper&lt;/li&gt;
-&lt;li&gt;Portrait photo&lt;/li&gt;
-&lt;li&gt;Dual widescreen wallpaper&lt;/li&gt;
-&lt;li&gt;Small photo&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;All photos should be displayed properly.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;From &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3dhbGxiYXNlLmNj&#34;&gt;Wallbase.cc&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
  ]]></description>
         </item>
     </channel>

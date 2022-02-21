@@ -7,9 +7,17 @@
     "home_page_url": "http://Wang-Ling-jie.github.io",
     "items": [
         {
+            "id": "http://wang-ling-jie.github.io/computer-science/ComputerOrganization/Lesson1/",
+            "url": "http://wang-ling-jie.github.io/computer-science/ComputerOrganization/Lesson1/",
+            "title": "",
+            "date_published": "2022-02-21T13:15:57.035Z",
+            "content_html": "",
+            "tags": []
+        },
+        {
             "id": "http://wang-ling-jie.github.io/computer-science/OperatingSystem/lesson1/",
             "url": "http://wang-ling-jie.github.io/computer-science/OperatingSystem/lesson1/",
-            "title": "HIT lesson",
+            "title": "HIT OS lesson",
             "date_published": "2022-02-15T07:46:13.000Z",
             "content_html": "<h1 id=\"什么是操作系统\"><a class=\"anchor\" href=\"#什么是操作系统\">#</a> 什么是操作系统</h1>\n<ol>\n<li>\n<p>计算机硬件和应用之间的一层软件</p>\n<p>计算机大致结构：</p>\n</li>\n</ol>\n<ul>\n<li>应用软件</li>\n<li>操作系统</li>\n<li>计算机硬件</li>\n</ul>\n<p>提供接口，方便使用硬件，高效使用硬件</p>\n<ol start=\"2\">\n<li>管理硬件</li>\n</ol>\n<ul>\n<li>CPU</li>\n<li>内存</li>\n<li>终端</li>\n<li>磁盘</li>\n<li>文件</li>\n<li>网络</li>\n<li>电源</li>\n<li>多核</li>\n</ul>\n<ol start=\"3\">\n<li>要学什么？</li>\n</ol>\n<ul>\n<li>进入操作系统\n<ul>\n<li>能理解真实操作系统运转</li>\n<li><code>printf(&quot;hello&quot;)</code>  怎么回事</li>\n<li>动手实践 Learn OS by coding them.</li>\n</ul>\n</li>\n</ul>\n<h1 id=\"揭开钢琴的盖子\"><a class=\"anchor\" href=\"#揭开钢琴的盖子\">#</a> 揭开钢琴的盖子</h1>\n<p>&lt;font size=&quot;10&quot; font color=&quot;pink&quot;&gt;<strong>Open the OS！</strong>&lt;/font&gt;</p>\n<h2 id=\"从打开电源开始\"><a class=\"anchor\" href=\"#从打开电源开始\">#</a> 从打开电源开始</h2>\n<ul>\n<li>从白纸到图灵机</li>\n<li>从图灵机到通用图灵机（设置控制器逻辑，决定控制器怎么工作）</li>\n<li>从通用图灵机到计算机（将程序载入到内存，PC 指向程序，在运算器和控制器中解释取指执行）</li>\n</ul>\n<p><img data-src=\"/assets/image-20220215163107209.png\" alt=\"image-20220215163107209\" /></p>\n<p><img data-src=\"/assets/image-20220215163359954.png\" alt=\"image-20220215163359954\" /></p>\n<p>&lt;font size=&quot;5&quot; font color=&quot;pink&quot;&gt;<strong> 打开电源时计算机执行的第一条指令是什么？</strong>&lt;/font&gt;</p>\n",
             "tags": [
@@ -210,14 +218,6 @@
             "title": "Videos",
             "date_published": "2013-12-24T16:19:15.000Z",
             "content_html": "<p>This is a video test post.</p>\n<p><strong>Youtube</strong></p>\n<p><div class=\"video-container\"><iframe src=\"https://www.youtube.com/embed/TIbZDRXM-Tg\" frameborder=\"0\" loading=\"lazy\" allowfullscreen></iframe></div></p>\n<p><strong>Vimeo</strong></p>\n<p><div class=\"video-container\"><iframe src=\"https://player.vimeo.com/video/82090131\" frameborder=\"0\" loading=\"lazy\" allowfullscreen></iframe></div></p>\n",
-            "tags": []
-        },
-        {
-            "id": "http://wang-ling-jie.github.io/gallery-post/",
-            "url": "http://wang-ling-jie.github.io/gallery-post/",
-            "title": "Gallery Post",
-            "date_published": "2013-12-24T16:16:18.000Z",
-            "content_html": "<p>This post contains 4 photos:</p>\n<ul>\n<li>Widescreen wallpaper</li>\n<li>Portrait photo</li>\n<li>Dual widescreen wallpaper</li>\n<li>Small photo</li>\n</ul>\n<p>All photos should be displayed properly.</p>\n<p><em>From <span class=\"exturl\" data-url=\"aHR0cDovL3dhbGxiYXNlLmNj\">Wallbase.cc</span></em></p>\n",
             "tags": []
         }
     ]
