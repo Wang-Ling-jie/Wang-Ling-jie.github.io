@@ -13,8 +13,67 @@
     <category term="关键词2" />
     <entry>
         <id>http://wang-ling-jie.github.io/computer-science/OperatingSystem/lesson1/</id>
-        <title>lesson1</title>
+        <title>HIT lesson</title>
         <link rel="alternate" href="http://wang-ling-jie.github.io/computer-science/OperatingSystem/lesson1/"/>
+        <content type="html">&lt;h1 id=&#34;什么是操作系统&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#什么是操作系统&#34;&gt;#&lt;/a&gt; 什么是操作系统&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;计算机硬件和应用之间的一层软件&lt;/p&gt;
+&lt;p&gt;计算机大致结构：&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;应用软件&lt;/li&gt;
+&lt;li&gt;操作系统&lt;/li&gt;
+&lt;li&gt;计算机硬件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;提供接口，方便使用硬件，高效使用硬件&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;管理硬件&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;CPU&lt;/li&gt;
+&lt;li&gt;内存&lt;/li&gt;
+&lt;li&gt;终端&lt;/li&gt;
+&lt;li&gt;磁盘&lt;/li&gt;
+&lt;li&gt;文件&lt;/li&gt;
+&lt;li&gt;网络&lt;/li&gt;
+&lt;li&gt;电源&lt;/li&gt;
+&lt;li&gt;多核&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;要学什么？&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;进入操作系统
+&lt;ul&gt;
+&lt;li&gt;能理解真实操作系统运转&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;printf(&amp;quot;hello&amp;quot;)&lt;/code&gt;  怎么回事&lt;/li&gt;
+&lt;li&gt;动手实践 Learn OS by coding them.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;揭开钢琴的盖子&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#揭开钢琴的盖子&#34;&gt;#&lt;/a&gt; 揭开钢琴的盖子&lt;/h1&gt;
+&lt;p&gt;&amp;lt;font size=&amp;quot;10&amp;quot; font color=&amp;quot;pink&amp;quot;&amp;gt;&lt;strong&gt;Open the OS！&lt;/strong&gt;&amp;lt;/font&amp;gt;&lt;/p&gt;
+&lt;h2 id=&#34;从打开电源开始&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#从打开电源开始&#34;&gt;#&lt;/a&gt; 从打开电源开始&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;从白纸到图灵机&lt;/li&gt;
+&lt;li&gt;从图灵机到通用图灵机（设置控制器逻辑，决定控制器怎么工作）&lt;/li&gt;
+&lt;li&gt;从通用图灵机到计算机（将程序载入到内存，PC 指向程序，在运算器和控制器中解释取指执行）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;/assets/image-20220215163107209.png&#34; alt=&#34;image-20220215163107209&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;/assets/image-20220215163359954.png&#34; alt=&#34;image-20220215163359954&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&amp;lt;font size=&amp;quot;5&amp;quot; font color=&amp;quot;pink&amp;quot;&amp;gt;&lt;strong&gt; 打开电源时计算机执行的第一条指令是什么？&lt;/strong&gt;&amp;lt;/font&amp;gt;&lt;/p&gt;
+</content>
+        <category term="计算机科学" scheme="http://wang-ling-jie.github.io/categories/computer-science/" />
+        <category term="操作系统" scheme="http://wang-ling-jie.github.io/categories/computer-science/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" />
+        <category term="笔记" scheme="http://wang-ling-jie.github.io/tags/%E7%AC%94%E8%AE%B0/" />
+        <updated>2022-02-15T07:46:13.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://wang-ling-jie.github.io/computer-science/OperatingSystem/lesson/</id>
+        <title>lesson1</title>
+        <link rel="alternate" href="http://wang-ling-jie.github.io/computer-science/OperatingSystem/lesson/"/>
         <content type="html">&lt;h1 id=&#34;什么是操作系统&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#什么是操作系统&#34;&gt;#&lt;/a&gt; 什么是操作系统&lt;/h1&gt;
 </content>
         <category term="计算机科学" scheme="http://wang-ling-jie.github.io/categories/computer-science/" />
@@ -1984,63 +2043,5 @@ alt=&amp;quot;IMAGE ALT TEXT HERE&amp;quot; width=&amp;quot;240&amp;quot; height
 &lt;p&gt;&lt;em&gt;From &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3dhbGxiYXNlLmNj&#34;&gt;Wallbase.cc&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
 </content>
         <updated>2013-12-24T16:16:18.000Z</updated>
-    </entry>
-    <entry>
-        <id>http://wang-ling-jie.github.io/tag-plugins/</id>
-        <title>Tag Plugins</title>
-        <link rel="alternate" href="http://wang-ling-jie.github.io/tag-plugins/"/>
-        <content type="html">&lt;p&gt;This post is used for testing tag plugins. See &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3plc3BpYS50dy9oZXhvL2RvY3MvdGFnLXBsdWdpbnMuaHRtbA==&#34;&gt;docs&lt;/span&gt; for more info.&lt;/p&gt;
-&lt;h2 id=&#34;block-quote&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#block-quote&#34;&gt;#&lt;/a&gt; Block Quote&lt;/h2&gt;
-&lt;h3 id=&#34;normal-blockquote&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#normal-blockquote&#34;&gt;#&lt;/a&gt; Normal blockquote&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Praesent diam elit, interdum ut pulvinar placerat, imperdiet at magna.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&#34;quote-from-a-book&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#quote-from-a-book&#34;&gt;#&lt;/a&gt; Quote from a book&lt;/h3&gt;
-&lt;p&gt;&lt;blockquote&gt;&lt;p&gt;Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy.&lt;/p&gt;
-&lt;footer&gt;&lt;strong&gt;David Levithan&lt;/strong&gt;&lt;cite&gt;Wide Awake&lt;/cite&gt;&lt;/footer&gt;&lt;/blockquote&gt;&lt;/p&gt;
-&lt;h3 id=&#34;quote-from-twitter&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#quote-from-twitter&#34;&gt;#&lt;/a&gt; Quote from Twitter&lt;/h3&gt;
-&lt;p&gt;&lt;blockquote&gt;&lt;p&gt;NEW: DevDocs now comes with syntax highlighting. &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2RldmRvY3MuaW8=&#34;&gt;http://devdocs.io&lt;/span&gt;&lt;/p&gt;
-&lt;footer&gt;&lt;strong&gt;@DevDocs&lt;/strong&gt;&lt;cite&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly90d2l0dGVyLmNvbS9kZXZkb2NzL3N0YXR1cy8zNTYwOTUxOTIwODU5NjI3NTI=&#34;&gt;twitter.com/devdocs/status/356095192085962752&lt;/span&gt;&lt;/cite&gt;&lt;/footer&gt;&lt;/blockquote&gt;&lt;/p&gt;
-&lt;h3 id=&#34;quote-from-an-article-on-the-web&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#quote-from-an-article-on-the-web&#34;&gt;#&lt;/a&gt; Quote from an article on the web&lt;/h3&gt;
-&lt;p&gt;&lt;blockquote&gt;&lt;p&gt;Every interaction is both precious and an opportunity to delight.&lt;/p&gt;
-&lt;footer&gt;&lt;strong&gt;Seth Godin&lt;/strong&gt;&lt;cite&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3NldGhnb2Rpbi50eXBlcGFkLmNvbS9zZXRoc19ibG9nLzIwMDkvMDcvd2VsY29tZS10by1pc2xhbmQtbWFya2V0aW5nLmh0bWw=&#34;&gt;Welcome to Island Marketing&lt;/span&gt;&lt;/cite&gt;&lt;/footer&gt;&lt;/blockquote&gt;&lt;/p&gt;
-&lt;h2 id=&#34;code-block&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#code-block&#34;&gt;#&lt;/a&gt; Code Block&lt;/h2&gt;
-&lt;h3 id=&#34;normal-code-block&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#normal-code-block&#34;&gt;#&lt;/a&gt; Normal code block&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;alert(&#39;Hello World!&#39;);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;with-caption&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#with-caption&#34;&gt;#&lt;/a&gt; With caption&lt;/h3&gt;
-&lt;p&gt;&lt;pre&gt;&lt;code&gt;array.map(callback[, thisArg])&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;
-&lt;h3 id=&#34;with-caption-and-url&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#with-caption-and-url&#34;&gt;#&lt;/a&gt; With caption and URL&lt;/h3&gt;
-&lt;p&gt;&lt;pre&gt;&lt;code&gt;.compact([0, 1, false, 2, ‘’, 3]);
-&amp;#x3D;&amp;gt; [1, 2, 3]&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;
-&lt;h3 id=&#34;with-marked-lines&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#with-marked-lines&#34;&gt;#&lt;/a&gt; With marked lines&lt;/h3&gt;
-&lt;p&gt;Line 1,7-8,10 should be marked with different color.&lt;/p&gt;
-&lt;p&gt;&lt;pre&gt;&lt;code&gt;const http &amp;#x3D; require(&amp;#39;http&amp;#39;);
-
-const hostname &amp;#x3D; &amp;#39;127.0.0.1&amp;#39;;
-const port &amp;#x3D; 1337;
-
-http.createServer((req, res) &amp;#x3D;&amp;gt; {
-  res.writeHead(200, { &amp;#39;Content-Type&amp;#39;: &amp;#39;text&amp;#x2F;plain&amp;#39; });
-  res.end(&amp;#39;Hello World\n&amp;#39;);
-}).listen(port, hostname, () &amp;#x3D;&amp;gt; {
-  console.log(&amp;#96;Server running at http:&amp;#x2F;&amp;#x2F;${hostname}:${port}&amp;#x2F;&amp;#96;);
-});&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;
-&lt;p&gt;Note: Theme&#39;s style should support  &lt;code&gt;.highlight.line.marked&lt;/code&gt;  (recommend to use the selection or current line color).&lt;/p&gt;
-&lt;h3 id=&#34;gist&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#gist&#34;&gt;#&lt;/a&gt; Gist&lt;/h3&gt;
-&lt;p&gt;&lt;script src=&#34;//gist.github.com/996818.js&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-&lt;h3 id=&#34;jsfiddle&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#jsfiddle&#34;&gt;#&lt;/a&gt; jsFiddle&lt;/h3&gt;
-&lt;p&gt;&lt;iframe scrolling=&#34;no&#34; width=&#34;100%&#34; height=&#34;300&#34; src=&#34;https://jsfiddle.net/ccWP7/embedded/js,resources,html,css,result/light&#34; frameborder=&#34;0&#34; loading=&#34;lazy&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
-&lt;h2 id=&#34;pullquote&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#pullquote&#34;&gt;#&lt;/a&gt; Pullquote&lt;/h2&gt;
-&lt;h3 id=&#34;left&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#left&#34;&gt;#&lt;/a&gt; Left&lt;/h3&gt;
-&lt;p&gt;&lt;blockquote class=&#34;pullquote left&#34;&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
-&lt;/blockquote&gt;&lt;/p&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempus molestie arcu, et fringilla mauris placerat ac. Nullam luctus bibendum risus. Ut cursus sed ipsum feugiat egestas. Suspendisse elementum, velit eu consequat consequat, augue lorem dapibus libero, eget pulvinar dolor est sit amet nulla. Suspendisse a porta tortor, et posuere mi. Pellentesque ultricies, mi quis volutpat malesuada, erat felis vulputate nisl, ac congue ante tortor ut ante. Proin aliquam sem vel mauris tincidunt, eget scelerisque tortor euismod. Nulla tincidunt enim nec commodo dictum. Mauris id sapien et orci gravida luctus id ut dui. In vel vulputate odio. Duis vel turpis molestie, scelerisque enim eu, lobortis eros. Cras at ipsum gravida, sagittis ante vel, viverra tellus. Nunc mauris turpis, elementum ullamcorper nisl pretium, ultrices cursus justo. Mauris porttitor commodo eros, ac ornare orci interdum in. Cras fermentum cursus leo sed mattis. In dignissim lorem sem, sit amet elementum mauris venenatis ac.&lt;/p&gt;
-&lt;h3 id=&#34;right&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#right&#34;&gt;#&lt;/a&gt; Right&lt;/h3&gt;
-&lt;p&gt;&lt;blockquote class=&#34;pullquote right&#34;&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
-&lt;/blockquote&gt;&lt;/p&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ligula justo, lobortis sit amet semper vel, dignissim sit amet libero. Praesent ac tempus ligula. Maecenas at gravida odio. Etiam tristique volutpat lacus eu faucibus. Donec non tempus arcu. Phasellus adipiscing, mauris nec mollis egestas, ipsum nunc auctor velit, et rhoncus lorem ipsum at ante. Praesent et sem in velit volutpat auctor. Duis vel mauris nulla. Maecenas mattis interdum ante, quis sagittis nibh cursus et. Nulla facilisi. Morbi convallis gravida tortor, ut fermentum enim gravida et. Nunc vel dictum nisl, non ultrices libero. Proin vestibulum felis eget orci consectetur lobortis. Vestibulum augue nulla, iaculis vitae augue vehicula, dignissim ultrices libero. Sed imperdiet urna et quam ultrices tincidunt nec ac magna. Etiam vel pharetra elit.&lt;/p&gt;
-</content>
-        <updated>2013-12-24T16:14:39.000Z</updated>
     </entry>
 </feed>
