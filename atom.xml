@@ -8,9 +8,158 @@
     <author>
       <name>我好菜啊</name>
     </author>
-    <updated>2022-02-22T09:03:13.000Z</updated>
+    <updated>2022-02-27T08:33:34.436Z</updated>
     <category term="关键词1" />
     <category term="关键词2" />
+    <entry>
+        <id>http://wang-ling-jie.github.io/SleepingTime/</id>
+        <title></title>
+        <link rel="alternate" href="http://wang-ling-jie.github.io/SleepingTime/"/>
+        <content type="html">&lt;h1 id=&#34;早睡记录&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#早睡记录&#34;&gt;#&lt;/a&gt; 早睡记录&lt;/h1&gt;
+</content>
+        <updated>2022-02-27T08:33:34.436Z</updated>
+    </entry>
+    <entry>
+        <id>http://wang-ling-jie.github.io/computer-science/ComputerOrganization/Lesson4/</id>
+        <title>HIT Computer Organization lesson</title>
+        <link rel="alternate" href="http://wang-ling-jie.github.io/computer-science/ComputerOrganization/Lesson4/"/>
+        <content type="html">&lt;h1 id=&#34;计算机组成原理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#计算机组成原理&#34;&gt;#&lt;/a&gt; 计算机组成原理&lt;/h1&gt;
+&lt;h2 id=&#34;存储器概述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#存储器概述&#34;&gt;#&lt;/a&gt; 存储器概述&lt;/h2&gt;
+&lt;h3 id=&#34;存储器分类&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#存储器分类&#34;&gt;#&lt;/a&gt; 存储器分类&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;按存储介质分类
+&lt;ul&gt;
+&lt;li&gt;半导体存储器    (芯片，U 盘)	TTL（晶体管）、MOS（金属氧化物）（易失）&lt;/li&gt;
+&lt;li&gt;磁表面存储器    （磁盘、磁带）磁头、磁载体&lt;/li&gt;
+&lt;li&gt;磁芯存储器    磁化方向保存 01 信息  硬磁材料、环状元件&lt;/li&gt;
+&lt;li&gt;光盘存储器    激光、磁光材料&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;按存取方式分类&lt;/li&gt;
+&lt;li&gt;存取时间与物理地址无关（随机访问）（不同地址可以在相同时间取出来或写入进去）
+&lt;ol&gt;
+&lt;li&gt;随机存储器（在程序执行过程中可读可写）（RAM）&lt;/li&gt;
+&lt;li&gt;只读存储器（在程序的执行过程中只读）（ROM）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;存取时间与物理地址有关（串行访问）
+&lt;ol&gt;
+&lt;li&gt;顺序存取存储器（磁带）必须转动直到指定位置转动到磁头下&lt;/li&gt;
+&lt;li&gt;直接存取存储器（磁盘）首先找到给定磁道，磁头停留在磁道上，磁盘转动，直到指定扇区转到磁头下再进行读写&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;按计算机中的作用分类
+&lt;ol&gt;
+&lt;li&gt;主存储器
+&lt;ol&gt;
+&lt;li&gt;RAM 可读可写
+&lt;ol&gt;
+&lt;li&gt;静态 RAM&lt;/li&gt;
+&lt;li&gt;动态 RAM（利用电容存储电荷）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;ROM 只读
+&lt;ol&gt;
+&lt;li&gt;MROM(mask)&lt;/li&gt;
+&lt;li&gt;PROM (可编程 ROM)&lt;/li&gt;
+&lt;li&gt;EPROM (电可编程)&lt;/li&gt;
+&lt;li&gt;EEPROM（电可擦写可编程）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Flash Memory（半导体存储器，快于磁盘，慢于主存，可作为便携式存储器（U 盘）和硬盘，也可作为主存和辅存之间的缓存）&lt;/li&gt;
+&lt;li&gt;Cache（主存储器和 CPU 之间，快于主存和 Flash Memory）&lt;/li&gt;
+&lt;li&gt;辅助存储器（磁盘、磁带、光盘）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;存储器的层次结构&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#存储器的层次结构&#34;&gt;#&lt;/a&gt; 存储器的层次结构&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;存储器三个主要特性的关系&lt;/p&gt;
+&lt;p&gt;高速度、高容量、低价格&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;C:%5CUsers%5Cwanglingjie%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20220224223421342.png&#34; alt=&#34;image-20220224223421342&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;存储体系&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;​		软件、硬件、软硬件相结合的方式将两级存储连接成一个整体（对程序员是透明的，系统对存储的调用由软硬件完成）&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;缓存 —— 主存层次和主存 —— 辅存层次&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img data-src=&#34;C:%5CUsers%5Cwanglingjie%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20220224224315637.png&#34; alt=&#34;image-20220224224315637&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;缓存 —— 主存：硬件方式连接成整体（使用主存储器的地址（物理地址），将主存的地址转换成缓存的块号）（缓存按内容查找）&lt;/p&gt;
+&lt;p&gt;主存 —— 辅存：软硬件结合件方式连接成整体（虚拟存储器 —— 虚地址，逻辑地址）&lt;/p&gt;
+&lt;h2 id=&#34;主存储器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#主存储器&#34;&gt;#&lt;/a&gt; 主存储器&lt;/h2&gt;
+&lt;h3 id=&#34;概述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#概述&#34;&gt;#&lt;/a&gt; 概述&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;主存的基本组成&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;主存与 CPU 之间的联系&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;主存中存储单元地址的分配&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;主存的技术指标&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;主存的基本组成&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#主存的基本组成&#34;&gt;#&lt;/a&gt; 主存的基本组成&lt;/h4&gt;
+&lt;p&gt;&lt;img data-src=&#34;C:%5CUsers%5Cwanglingjie%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20220224225949447.png&#34; alt=&#34;image-20220224225949447&#34; /&gt;&lt;/p&gt;
+&lt;h4 id=&#34;主存和cpu之间的联系&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#主存和cpu之间的联系&#34;&gt;#&lt;/a&gt; 主存和 CPU 之间的联系&lt;/h4&gt;
+&lt;p&gt;&lt;img data-src=&#34;C:%5CUsers%5Cwanglingjie%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20220224230138017.png&#34; alt=&#34;image-20220224230138017&#34; /&gt;&lt;/p&gt;
+&lt;h4 id=&#34;主存中存储单元的地址分配&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#主存中存储单元的地址分配&#34;&gt;#&lt;/a&gt; 主存中存储单元的地址分配&lt;/h4&gt;
+&lt;p&gt;假设存储字长 32 位，编址方式是字节&lt;/p&gt;
+&lt;p&gt;12345678H 这个数据存储：&lt;/p&gt;
+&lt;p&gt;大端法：高位字节地址为字地址  12 34 56 78&lt;/p&gt;
+&lt;p&gt;小端法：低位字节地址为字地址  78 56 34 12&lt;/p&gt;
+&lt;p&gt;设地址线为 24 根    按字节寻址：2^24=16MB&lt;/p&gt;
+&lt;p&gt;若字长为 16 位        按字寻址                    8MW&lt;/p&gt;
+&lt;p&gt;若字长为 32 位        按字寻址                     4MW&lt;/p&gt;
+&lt;h4 id=&#34;主存的技术指标&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#主存的技术指标&#34;&gt;#&lt;/a&gt; 主存的技术指标&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;存储容量    主存中存放二进制代码的总位数&lt;/li&gt;
+&lt;li&gt;存储速度
+&lt;ul&gt;
+&lt;li&gt;存取时间    存储器的访问时间  读出时间、写入时间&lt;/li&gt;
+&lt;li&gt;存取周期    连续两次独立的存储器操作（读或写）所需的最小间隔时间   读周期、写周期&lt;/li&gt;
+&lt;li&gt;存储器的带宽    单位时间读取或写入的数据   位 / 秒&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;半导体芯片简介&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#半导体芯片简介&#34;&gt;#&lt;/a&gt; 半导体芯片简介&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;半导体存储芯片的基本结构&lt;/li&gt;
+&lt;li&gt;半导体存储芯片的译码驱动方式&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;半导体存储芯片的基本结构&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#半导体存储芯片的基本结构&#34;&gt;#&lt;/a&gt; 半导体存储芯片的基本结构&lt;/h4&gt;
+&lt;p&gt;&lt;img data-src=&#34;C:%5CUsers%5Cwanglingjie%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20220224232925082.png&#34; alt=&#34;image-20220224232925082&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;片选线：芯片选择信号，指出这次操作给出的地址在哪个芯片中&lt;/p&gt;
+&lt;p&gt;片选线有两种标识方式：CS: 芯片选择（低电平有效）&lt;/p&gt;
+&lt;p&gt;​										   CE: 芯片使能信号&lt;/p&gt;
+&lt;p&gt;读写控制信号：操作是读还是写  WE（一根信号线）: 低电平为写，高电平为读&lt;/p&gt;
+&lt;p&gt;​														OE   低电平为输出（把存储矩阵写到数据线，对应读操作）&lt;/p&gt;
+&lt;p&gt;​														WE    低电平为写操作（把数据线中的数据写到存储矩阵中）&lt;/p&gt;
+&lt;p&gt;地址线（单向）：CPU 指向存储器&lt;/p&gt;
+&lt;p&gt;数据线（双向）&lt;/p&gt;
+&lt;p&gt;芯片容量：假设地址线 10 位，数据线 4 位，则芯片容量为 2^10 * 4=1K * 4&lt;/p&gt;
+&lt;h4 id=&#34;存储芯片片选线的作用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#存储芯片片选线的作用&#34;&gt;#&lt;/a&gt; 存储芯片片选线的作用：&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;16K*1 位的芯片如何构成 64K*8 位的芯片&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;C:%5CUsers%5Cwanglingjie%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20220224234628293.png&#34; alt=&#34;image-20220224234628293&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;（用 8 个芯片同时进行读写，构成 16K*8 位的存储器，每一个芯片就读写了一位二进制信息，加起来读写了 8 位二进制信息）&lt;/p&gt;
+&lt;p&gt;（每组 8 个芯片要同时工作，才能读写 8 个二进制信号，所以每组用片选线连接在一起)&lt;/p&gt;
+&lt;p&gt;0——16K-1：第一组&lt;/p&gt;
+&lt;p&gt;16K——32K-1：第二组&lt;/p&gt;
+&lt;p&gt;32K——48K-1：第三组&lt;/p&gt;
+&lt;p&gt;48K——64-1：第四组&lt;/p&gt;
+</content>
+        <category term="计算机科学" scheme="http://wang-ling-jie.github.io/categories/computer-science/" />
+        <category term="计算机组成原理" scheme="http://wang-ling-jie.github.io/categories/computer-science/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/" />
+        <category term="笔记" scheme="http://wang-ling-jie.github.io/tags/%E7%AC%94%E8%AE%B0/" />
+        <updated>2022-02-24T13:21:13.000Z</updated>
+    </entry>
     <entry>
         <id>http://wang-ling-jie.github.io/computer-science/ComputerOrganization/Lesson3/</id>
         <title>HIT Computer Organization lesson</title>
@@ -55,8 +204,7 @@
 &lt;p&gt;​			计算机系统之间或计算机系统和其他系统之间&lt;/p&gt;
 &lt;p&gt;​			传输方式：串行、并行&lt;/p&gt;
 &lt;h2 id=&#34;总线特性与性能指标&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#总线特性与性能指标&#34;&gt;#&lt;/a&gt; 总线特性与性能指标&lt;/h2&gt;
-&lt;pre&gt;&lt;code&gt;### 总线物理实现
-&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;总线的物理实现&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#总线的物理实现&#34;&gt;#&lt;/a&gt; 总线的物理实现&lt;/h3&gt;
 &lt;p&gt;印刷于主板上，留出接口（插板）&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;C:%5CUsers%5Cwanglingjie%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20220222173747755.png&#34; alt=&#34;image-20220222173747755&#34; /&gt;&lt;/p&gt;
 &lt;h3 id=&#34;总线特性&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#总线特性&#34;&gt;#&lt;/a&gt; 总线特性&lt;/h3&gt;
@@ -203,7 +351,45 @@
 &lt;p&gt;半互锁：从设备接受请求并发出应答信号后，当主设备接收到应答信号后才撤销请求，否则主设备保持信号（可能使请求信号一直保持高电平）&lt;/p&gt;
 &lt;p&gt;全互锁：从设备接受请求并发出应答信号后，发出应答信号。主设备接受到应答信号后才撤销请求；同样，只有主设备信号撤销以后，从设备才会撤销应答信号。（比较可靠）&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;C:%5CUsers%5Cwanglingjie%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20220223000234069.png&#34; alt=&#34;image-20220223000234069&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;半同步通信&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;半同步通信（同步、异步结合）: 允许不同速度的模块数据交换&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;同步&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;​		发送方用系统 时钟前沿 发信号&lt;/p&gt;
+&lt;p&gt;​		接收方用系统 时钟后沿 判断、识别&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;异步&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;​		允许不同速度模块和谐工作&lt;/p&gt;
+&lt;p&gt;​		增加了一条等待响应信号&lt;/p&gt;
+&lt;p&gt;以输入数据为例的半同步通信时序&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;msub&gt;&lt;mi&gt;T&lt;/mi&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/msub&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;T_1&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.83333em;vertical-align:-0.15em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.13889em;&#34;&gt;T&lt;/span&gt;&lt;span class=&#34;msupsub&#34;&gt;&lt;span class=&#34;vlist-t vlist-t2&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.30110799999999993em;&#34;&gt;&lt;span style=&#34;top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.7em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-s&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.15em;&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;  主模块发地址&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;msub&gt;&lt;mi&gt;T&lt;/mi&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msub&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;T_2&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.83333em;vertical-align:-0.15em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.13889em;&#34;&gt;T&lt;/span&gt;&lt;span class=&#34;msupsub&#34;&gt;&lt;span class=&#34;vlist-t vlist-t2&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.30110799999999993em;&#34;&gt;&lt;span style=&#34;top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.7em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;2&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-s&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.15em;&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;  主模块发命令&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;msub&gt;&lt;mi&gt;T&lt;/mi&gt;&lt;mi&gt;w&lt;/mi&gt;&lt;/msub&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;T_w&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.83333em;vertical-align:-0.15em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.13889em;&#34;&gt;T&lt;/span&gt;&lt;span class=&#34;msupsub&#34;&gt;&lt;span class=&#34;vlist-t vlist-t2&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.151392em;&#34;&gt;&lt;span style=&#34;top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.7em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mathnormal mtight&#34; style=&#34;margin-right:0.02691em;&#34;&gt;w&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-s&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.15em;&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;  当 WAIT 信号为低电平时，等待一个 T&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;msub&gt;&lt;mi&gt;T&lt;/mi&gt;&lt;mi&gt;w&lt;/mi&gt;&lt;/msub&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;T_w&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.83333em;vertical-align:-0.15em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.13889em;&#34;&gt;T&lt;/span&gt;&lt;span class=&#34;msupsub&#34;&gt;&lt;span class=&#34;vlist-t vlist-t2&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.151392em;&#34;&gt;&lt;span style=&#34;top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.7em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mathnormal mtight&#34; style=&#34;margin-right:0.02691em;&#34;&gt;w&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-s&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.15em;&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;  当 WAIT 信号为低电平时，等待一个 T&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;msub&gt;&lt;mi&gt;T&lt;/mi&gt;&lt;mn&gt;3&lt;/mn&gt;&lt;/msub&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;T_3&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.83333em;vertical-align:-0.15em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.13889em;&#34;&gt;T&lt;/span&gt;&lt;span class=&#34;msupsub&#34;&gt;&lt;span class=&#34;vlist-t vlist-t2&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.30110799999999993em;&#34;&gt;&lt;span style=&#34;top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.7em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;3&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-s&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.15em;&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;   从模块提供数据&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;msub&gt;&lt;mi&gt;T&lt;/mi&gt;&lt;mn&gt;4&lt;/mn&gt;&lt;/msub&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;T_4&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.83333em;vertical-align:-0.15em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.13889em;&#34;&gt;T&lt;/span&gt;&lt;span class=&#34;msupsub&#34;&gt;&lt;span class=&#34;vlist-t vlist-t2&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.30110799999999993em;&#34;&gt;&lt;span style=&#34;top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.7em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;4&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-s&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.15em;&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;   从模块撤销数据，主模块撤销命令&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;C:%5CUsers%5Cwanglingjie%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20220224204425369.png&#34; alt=&#34;image-20220224204425369&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;上述三种通信的共同点（以输入数据为例）&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;从模块准备数据时总线空闲，浪费总线资源&lt;/p&gt;
+&lt;p&gt;主模块发地址、命令、从模块发送数据占用总线&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;分离式通信&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;充分挖掘系统总线每个瞬间的潜力&lt;/p&gt;
+&lt;p&gt;一个总线传输周期&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;子周期 1    主模块申请占用总线，使用完后即放弃总线的使用权&lt;/li&gt;
+&lt;li&gt;子周期 2    从模块申请占用总线，将各种信息传送至总线上&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;例：读硬盘等待时间长，故通道会断开，不再占用总线，硬盘控制器控制磁盘完成定位操作后向通道发出请求，然后通道发出找扇区的操作，找扇区后硬盘再向通道提出请求，通道再让硬盘传输数据。&lt;/p&gt;
+&lt;p&gt;特点：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;各模块都有权申请占用总线，从模块主模块可以互相转化&lt;/li&gt;
+&lt;li&gt;采用同步方式通信，不等对方回答&lt;/li&gt;
+&lt;li&gt;各个模块准备数据时不占用总线&lt;/li&gt;
+&lt;li&gt;总线被占用时无空闲，充分利用总线的带宽&lt;/li&gt;
+&lt;/ol&gt;
 </content>
         <category term="计算机科学" scheme="http://wang-ling-jie.github.io/categories/computer-science/" />
         <category term="计算机组成原理" scheme="http://wang-ling-jie.github.io/categories/computer-science/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/" />
@@ -2538,25 +2724,5 @@ alt=&amp;quot;IMAGE ALT TEXT HERE&amp;quot; width=&amp;quot;240&amp;quot; height
         <category term="Foo" scheme="http://wang-ling-jie.github.io/tags/Foo/" />
         <category term="Bar" scheme="http://wang-ling-jie.github.io/tags/Bar/" />
         <updated>2018-07-24T15:31:06.000Z</updated>
-    </entry>
-    <entry>
-        <id>http://wang-ling-jie.github.io/images/</id>
-        <title>Images</title>
-        <link rel="alternate" href="http://wang-ling-jie.github.io/images/"/>
-        <content type="html">&lt;p&gt;This is a image test post.&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;/assets/wallpaper-2572384.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;/assets/wallpaper-2311325.jpg&#34; alt=&#34;Caption&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;/assets/wallpaper-878514.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://placehold.it/350x150.jpg&#34; alt=&#34;Small Picture&#34; /&gt;&lt;/p&gt;
-</content>
-        <updated>2013-12-26T14:46:49.000Z</updated>
-    </entry>
-    <entry>
-        <id>http://wang-ling-jie.github.io/no-title/</id>
-        <title></title>
-        <link rel="alternate" href="http://wang-ling-jie.github.io/no-title/"/>
-        <content type="html">&lt;p&gt;This post doesn&#39;t have a title. Make sure it&#39;s accessible.&lt;/p&gt;
-</content>
-        <updated>2013-12-25T14:57:49.000Z</updated>
     </entry>
 </feed>
