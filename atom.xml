@@ -8,16 +8,18 @@
     <author>
       <name>我好菜啊</name>
     </author>
-    <updated>2022-02-27T08:33:34.436Z</updated>
+    <updated>2022-02-27T08:37:50.000Z</updated>
     <category term="关键词1" />
     <category term="关键词2" />
     <entry>
         <id>http://wang-ling-jie.github.io/SleepingTime/</id>
-        <title></title>
+        <title>Go to bed early</title>
         <link rel="alternate" href="http://wang-ling-jie.github.io/SleepingTime/"/>
         <content type="html">&lt;h1 id=&#34;早睡记录&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#早睡记录&#34;&gt;#&lt;/a&gt; 早睡记录&lt;/h1&gt;
 </content>
-        <updated>2022-02-27T08:33:34.436Z</updated>
+        <category term="记录" scheme="http://wang-ling-jie.github.io/categories/%E8%AE%B0%E5%BD%95/" />
+        <category term="life" scheme="http://wang-ling-jie.github.io/tags/life/" />
+        <updated>2022-02-27T08:37:50.000Z</updated>
     </entry>
     <entry>
         <id>http://wang-ling-jie.github.io/computer-science/ComputerOrganization/Lesson4/</id>

@@ -9,10 +9,13 @@
         {
             "id": "http://wang-ling-jie.github.io/SleepingTime/",
             "url": "http://wang-ling-jie.github.io/SleepingTime/",
-            "title": "",
-            "date_published": "2022-02-27T08:33:34.436Z",
+            "title": "Go to bed early",
+            "date_published": "2022-02-27T08:37:50.000Z",
             "content_html": "<h1 id=\"早睡记录\"><a class=\"anchor\" href=\"#早睡记录\">#</a> 早睡记录</h1>\n",
-            "tags": []
+            "tags": [
+                "记录",
+                "life"
+            ]
         },
         {
             "id": "http://wang-ling-jie.github.io/computer-science/ComputerOrganization/Lesson4/",
