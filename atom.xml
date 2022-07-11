@@ -17,7 +17,7 @@
         <link rel="alternate" href="http://wang-ling-jie.github.io/computer-science/leetcode/1_TwoSum/"/>
         <content type="html">&lt;h1 id=&#34;1-两数之和&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1-两数之和&#34;&gt;#&lt;/a&gt; 1. 两数之和&lt;/h1&gt;
 &lt;h2 id=&#34;题目&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#题目&#34;&gt;#&lt;/a&gt; 题目&lt;/h2&gt;
-&lt;p&gt;[两数之和](&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9sZWV0Y29kZS5jbi9wcm9ibGVtcy90d28tc3VtLw==&#34;&gt;1. 两数之和 - 力扣（LeetCode）&lt;/span&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9sZWV0Y29kZS5jbi9wcm9ibGVtcy90d28tc3VtLw==&#34;&gt;1. 两数之和 - 力扣（LeetCode）&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;给定一个整数数组  &lt;code&gt;nums&lt;/code&gt;  和一个整数目标值  &lt;code&gt;target&lt;/code&gt; ，请你在该数组中找出 和为目标值  &lt;code&gt;target&lt;/code&gt;   的那 两个 整数，并返回它们的数组下标。&lt;/p&gt;
 &lt;p&gt;你可以假设每种输入只会对应一个答案。但是，数组中同一个元素在答案里不能重复出现。&lt;/p&gt;
 &lt;p&gt;你可以按任意顺序返回答案。&lt;/p&gt;
